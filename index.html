@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 텍스트 복사</title>
+</head>
+<body>
+    <h1>복사하기 구현</h1>
+    <textarea id="text"></textarea><br>
+    <button id ="copy">복사</button>
+    <script>
+        document.getElementById("copy").onclick = function(){
+            var text = document.getElementById("text");
+            text.select();
+            document.execCommand("copy");
+            alert("복사가 완료되었습니다!");
+            // execCommand() 편집가능한 부분에 있어서 명령어를 선택하여 실행시켜주는것이다.
+            // select() 메소드는 드래그해서 선택하는것을 코드로 구현해주는것이다.
+        }
+    </script>
+</body>
+</html>
