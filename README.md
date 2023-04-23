@@ -1,6 +1,6 @@
 # JS_텍스트 복사
 
-<textarea id="text"></textarea><br>
+<textarea id="text"></textarea>
 // 텍스트 입력 구역
 
 <button id ="copy">복사</button>
